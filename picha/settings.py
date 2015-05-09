@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'pagination',
     # custom apps
     'photos',
+    'feedback',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -68,6 +69,8 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
+                'django.template.context_processors.media',
+                'django.template.context_processors.static',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -108,6 +111,12 @@ STATICFILES_DIRS = (
 )
 STATIC_ROOT = '/static/'
 STATIC_URL = '/static/'
+
+# Emails
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+DEFAULT_FROM_EMAIL = 'Picha <picha@example.com>'
 
 # CELERY
 BROKER_URL = 'redis://localhost:6379/8'

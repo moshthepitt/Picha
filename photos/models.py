@@ -12,7 +12,7 @@ class Photo(models.Model):
     class Meta:
         verbose_name = "Photo"
         verbose_name_plural = "Photos"
-        ordering = ['created_on', 'title']
+        ordering = ['-created_on', 'title']
 
     def __unicode__(self):
         return self.title
