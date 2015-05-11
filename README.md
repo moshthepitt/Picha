@@ -2,10 +2,12 @@
 This is a simple Django project meant to demonstrate the use of Celery with Django.
 
 It is made up of two simple apps:
+
 1. Photos - includes a periodic Celery task that gets photos from Flickr using their API
 2. Feedback - includes a simple task to process a user submitted form
 
 ## How to get it running
+
 1. Clone the repository into some directory
 2. Install the Python packages in requirements.txt
 3. Run Django
