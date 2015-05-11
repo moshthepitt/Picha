@@ -9,5 +9,5 @@ logger = get_task_logger(__name__)
 @task(name="send_feedback_email_task")
 def send_feedback_email_task(email, message):
     """sends an email when fedback form is filled successfully"""
-    logger.info("Sedn feedback email")
+    logger.info("Sent feedback email")
     return send_feedback_email(email, message)
