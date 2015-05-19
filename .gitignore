@@ -4,3 +4,6 @@ local_settings.py
 celerybeat.pid
 celerybeat-schedule
 whoosh_index/
+_old
+env
+venv
