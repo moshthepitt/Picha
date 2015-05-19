@@ -7,3 +7,5 @@ whoosh_index/
 _old
 env
 venv
+__pycache__
+*.rdb
