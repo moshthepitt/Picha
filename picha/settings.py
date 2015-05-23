@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'pagination',
     # custom apps
     'feedback',
+    'photos',
 )
 
 MIDDLEWARE_CLASSES = (
