@@ -6,6 +6,7 @@ from feedback.forms import FeedbackForm
 
 class PhotoView(ListView):
     model = Photo
+    paginate_by = 24
 
     def get_context_data(self, **kwargs):
         context = super(PhotoView, self).get_context_data(**kwargs)

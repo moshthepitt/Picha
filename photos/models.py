@@ -14,5 +14,5 @@ class Photo(models.Model):
         verbose_name_plural = "Photos"
         ordering = ['-created_on', 'title']
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
