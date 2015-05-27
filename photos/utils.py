@@ -12,7 +12,8 @@ def get_latest_flickr_image():
     url = photo_settings.FLICKR_JSON_FEED_URL
     r = requests.get(url)
     page_content = r.text
-    # It turns out Flickr escapes single quotes (') and apparently this isn't allowed and makes the JSON invalid.
+    # It turns out Flickr escapes single quotes (')
+    # and apparently this isn't allowed and makes the JSON invalid.
     # we use String.replace to get around this
     probably_json = page_content.replace("\\'", "'")
     # now we load the json

@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
                 ('description', models.TextField(verbose_name=b'Description')),
             ],
             options={
-                'ordering': ['created_on', 'title'],
+                'ordering': ['-created_on', 'title'],
                 'verbose_name': 'Photo',
                 'verbose_name_plural': 'Photos',
             },
